@@ -19,8 +19,9 @@ def app_android():
     """
     Create driver
     """
-    USER = os.getenv('userName')
-    KEY = os.getenv('accessKey')
+    USER = 'bsuser_HtCwL5'
+    KEY = '23WEX1sn2spYJeGnGWYR'
+
 
     desired_cap = {
         "app": "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c",
