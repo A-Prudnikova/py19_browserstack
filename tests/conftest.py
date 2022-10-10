@@ -9,9 +9,6 @@ from selene.support.shared import browser
 
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
-    """
-    Load .env
-    """
     load_dotenv()
 
 @pytest.fixture(scope='function')
@@ -19,8 +16,8 @@ def app_android():
     """
     Create driver
     """
-    USER = 'bsuser_HtCwL5'
-    KEY = '23WEX1sn2spYJeGnGWYR'
+    USER = os.getenv('LOGIN')
+    KEY = os.getenv('KEY')
 
 
     desired_cap = {
